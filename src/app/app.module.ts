@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavLinkComponent } from './components/nav-link/nav-link.component';
 import { LogoComponent } from './components/logo/logo.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     NavLinkComponent,
-    LogoComponent
+    LogoComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule
