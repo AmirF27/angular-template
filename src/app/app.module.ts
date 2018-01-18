@@ -7,6 +7,7 @@ import { NavLinkComponent } from './components/nav-link/nav-link.component';
 import { LogoComponent } from './components/logo/logo.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactBarComponent } from './components/contact-bar/contact-bar.compon
     NavLinkComponent,
     LogoComponent,
     HeroComponent,
-    ContactBarComponent
+    ContactBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule
