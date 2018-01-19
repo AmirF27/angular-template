@@ -12,6 +12,8 @@ import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './components/home/home.component';
 import { StatCardComponent } from './components/stat-card/stat-card.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
+import { ProductsComponent } from './components/products/products.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { SubscribeComponent } from './components/subscribe/subscribe.component';
     CardComponent,
     HomeComponent,
     StatCardComponent,
-    SubscribeComponent
+    SubscribeComponent,
+    ProductsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule
