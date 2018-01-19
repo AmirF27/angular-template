@@ -11,6 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
 import { HomeComponent } from './components/home/home.component';
 import { StatCardComponent } from './components/stat-card/stat-card.component';
+import { SubscribeComponent } from './components/subscribe/subscribe.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { StatCardComponent } from './components/stat-card/stat-card.component';
     FooterComponent,
     CardComponent,
     HomeComponent,
-    StatCardComponent
+    StatCardComponent,
+    SubscribeComponent
   ],
   imports: [
     BrowserModule
