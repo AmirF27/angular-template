@@ -23,6 +23,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { AboutComponent } from './components/about/about.component';
 import { CompanyHistoryComponent } from './components/company-history/company-history.component';
 import { TeamComponent } from './components/team/team.component';
+import { EmployeeCardComponent } from './components/employee-card/employee-card.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TeamComponent } from './components/team/team.component';
     FactsComponent,
     AboutComponent,
     CompanyHistoryComponent,
-    TeamComponent
+    TeamComponent,
+    EmployeeCardComponent
   ],
   imports: [
     BrowserModule,

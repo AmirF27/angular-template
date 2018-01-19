@@ -7,6 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input('title') title: string;
-  @Input('type') icon: string;
+  @Input('icon') icon: string;
   @Input('primary') primary: boolean = false;
 }
