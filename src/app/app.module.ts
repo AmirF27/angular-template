@@ -14,6 +14,8 @@ import { StatCardComponent } from './components/stat-card/stat-card.component';
 import { SubscribeComponent } from './components/subscribe/subscribe.component';
 import { ProductsComponent } from './components/products/products.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { LatestWorksComponent } from './components/latest-works/latest-works.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     StatCardComponent,
     SubscribeComponent,
     ProductsComponent,
-    CarouselComponent
+    CarouselComponent,
+    LatestWorksComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule
