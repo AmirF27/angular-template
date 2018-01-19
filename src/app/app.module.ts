@@ -26,6 +26,7 @@ import { TeamComponent } from './components/team/team.component';
 import { EmployeeCardComponent } from './components/employee-card/employee-card.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesComponent } from './components/services/services.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { ServicesComponent } from './components/services/services.component';
     TeamComponent,
     EmployeeCardComponent,
     PortfolioComponent,
-    ServicesComponent
+    ServicesComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
