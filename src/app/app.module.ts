@@ -8,6 +8,7 @@ import { LogoComponent } from './components/logo/logo.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/footer/footer.component';
     LogoComponent,
     HeroComponent,
     ContactBarComponent,
-    FooterComponent
+    FooterComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule
