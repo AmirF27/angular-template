@@ -16,6 +16,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { LatestWorksComponent } from './components/latest-works/latest-works.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { FeaturesComponent } from './components/features/features.component';
+import { FactsComponent } from './components/facts/facts.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { GalleryComponent } from './components/gallery/gallery.component';
     ProductsComponent,
     CarouselComponent,
     LatestWorksComponent,
-    GalleryComponent
+    GalleryComponent,
+    FeaturesComponent,
+    FactsComponent
   ],
   imports: [
     BrowserModule
