@@ -9,6 +9,8 @@ import { HeroComponent } from './components/hero/hero.component';
 import { ContactBarComponent } from './components/contact-bar/contact-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
+import { HomeComponent } from './components/home/home.component';
+import { StatCardComponent } from './components/stat-card/stat-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CardComponent } from './components/card/card.component';
     HeroComponent,
     ContactBarComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    HomeComponent,
+    StatCardComponent
   ],
   imports: [
     BrowserModule
