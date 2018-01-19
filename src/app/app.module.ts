@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavLinkComponent } from './components/nav-link/nav-link.component';
@@ -18,6 +20,9 @@ import { LatestWorksComponent } from './components/latest-works/latest-works.com
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { FactsComponent } from './components/facts/facts.component';
+import { AboutComponent } from './components/about/about.component';
+import { CompanyHistoryComponent } from './components/company-history/company-history.component';
+import { TeamComponent } from './components/team/team.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +42,14 @@ import { FactsComponent } from './components/facts/facts.component';
     LatestWorksComponent,
     GalleryComponent,
     FeaturesComponent,
-    FactsComponent
+    FactsComponent,
+    AboutComponent,
+    CompanyHistoryComponent,
+    TeamComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
