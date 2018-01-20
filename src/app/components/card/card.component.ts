@@ -10,4 +10,24 @@ export class CardComponent {
   @Input('icon') icon: string;
   @Input('iconPlacement') iconPlacement: string;
   @Input('primary') primary: boolean = false;
+
+  iconMap = {
+    announcement: 'bullhorn',
+    search: 'search',
+    timer: 'clock-o',
+    mobile: 'mobile',
+    code: 'code',
+    brush: 'paint-brush',
+    grid: 'th',
+    check: 'check'
+  };
+
+  getIcon(): string {
+    if (this.icon in this.iconMap) {
+      return this.iconMap[this.icon];
+    } else {
+      console.warn(`${this.icon} is not a valid icon, defaulted to 'announcement'`);
+      return this.iconMap.announcement;
+    }
+  }
 }

@@ -1,4 +1,5 @@
 <section>
+  <i *ngIf="icon" class="fa fa-{{getIcon()}}" aria-hidden="true"></i>
   <h4>{{title}}</h4>
   <p>
     <ng-content></ng-content>
