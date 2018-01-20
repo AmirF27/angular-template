@@ -10,6 +10,7 @@ export class CardComponent {
   @Input('icon') icon: string;
   @Input('iconPlacement') iconPlacement: string;
   @Input('primary') primary: boolean = false;
+  @Input('link') link: string;
 
   iconMap = {
     announcement: 'bullhorn',
