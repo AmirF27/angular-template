@@ -1,5 +1,6 @@
-<nav>
-  <ul>
-    <ng-content></ng-content>
+<nav class="nav">
+  <ng-content select="app-logo"></ng-content>
+  <ul class="navbar navbar--right">
+    <ng-content select="app-nav-link"></ng-content>
   </ul>
 </nav>

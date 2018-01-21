@@ -1,0 +1,29 @@
+.nav {
+  @include clearfix();
+
+  padding-bottom: $navbar-padding;
+  padding-top: $navbar-padding;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+
+  .navbar__link {
+    display: inline-block;
+
+    a {
+      color: $color-text-primary;
+      padding: $navlink-padding;
+      transition: $navlink-transition;
+
+      &:hover {
+        color: $color-text;
+      }
+    }
+  }
+}
+
+.navbar--right {
+  float: right;
+}

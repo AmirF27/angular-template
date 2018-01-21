@@ -1,0 +1,6 @@
+.container {
+  @include clearfix();
+
+  margin: 0 auto;
+  max-width: $container-max-width;
+}

@@ -1,0 +1,19 @@
+@import '../../../scss/partials/variables';
+
+$font-size: 0.9rem;
+$font-weight: 700;
+
+.nav {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+.fa {
+  color: $color-accent;
+
+  .navbar__link:hover & {
+    color: $color-text;
+  }
+
+  transition: $navlink-transition;
+}
