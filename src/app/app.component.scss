@@ -1,8 +1,10 @@
+$overlay-color: rgba(29, 43, 83, .89);
+
 header {
   background-image: url('../assets/images/hero.jpg');
   background-size: cover;
 }
 
 .overlay {
-  background-color: rgba(29,43,83,.89);
+  background-color: $overlay-color;
 }

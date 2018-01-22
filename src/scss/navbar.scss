@@ -3,6 +3,13 @@
 
   padding-bottom: $navbar-padding;
   padding-top: $navbar-padding;
+
+  .navbar__logo {
+    color: $white;
+    font-size: $navlogo-font-size;
+    font-weight: $navlogo-font-weight;
+    text-transform: uppercase;
+  }
 }
 
 .navbar {
@@ -13,7 +20,7 @@
     display: inline-block;
 
     a {
-      color: $color-text-primary;
+      color: $color-text-navbar;
       padding: $navlink-padding;
       transition: $navlink-transition;
 
