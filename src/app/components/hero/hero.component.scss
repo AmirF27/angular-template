@@ -1,0 +1,14 @@
+@import '../../../scss/partials/variables';
+
+$hero-margin: 100px;
+$hero-title-font-size: 80px;
+$hero-title-font-weight: 400;
+
+.hero {
+  color: $color-text;
+
+  h1 {
+    font-size: $hero-title-font-size;
+    font-weight: $hero-title-font-weight;
+  }
+}
