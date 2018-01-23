@@ -1,4 +1,4 @@
-<header>
+<header [class.header--small]="currentRoute != '/'">
   <div class="overlay">
     <div class="container">
       <app-contact-bar></app-contact-bar>
@@ -13,7 +13,12 @@
         <app-nav-link url="/contact">Contact</app-nav-link>
       </app-navbar>
 
-      <app-hero title="Home"></app-hero>
+      <app-hero
+        title="{{heroes[currentRoute]?.title}}"
+        [button]="heroes[currentRoute]?.button"
+        [center]="heroes[currentRoute]?.center || false">
+        {{heroes[currentRoute]?.info}}
+      </app-hero>
     </div>
   </div>
 </header>

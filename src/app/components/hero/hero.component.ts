@@ -7,4 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class HeroComponent {
   @Input('title') title: string;
+  @Input('button') button: {};
+  @Input('center') center: boolean = false;
 }

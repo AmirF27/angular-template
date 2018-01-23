@@ -1,13 +1,18 @@
 @import '../scss/partials/mixins';
 
 $overlay-color: rgba(29, 43, 83, .89);
-$header-height: 800px;
+$header-height-primary: 800px;
+$header-height-secondary: 500px;
 
 header {
   background-image: url('../assets/images/hero.jpg');
   background-size: cover;
-  height: $header-height;
+  height: $header-height-primary;
   position: relative;
+
+  &.header--small {
+    height: $header-height-secondary;
+  }
 }
 
 .overlay {
@@ -21,12 +26,4 @@ header {
   @include fill-parent();
 
   z-index: 100;
-}
-
-app-hero {
-  @include fill-parent();
-
-  align-items: center;
-  display: flex;
-  z-index: -100;
 }

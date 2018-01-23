@@ -1,3 +1,9 @@
-<section class="hero">
-  <h1>{{title}}</h1>
-</section>
+<div [class.center]="center">
+  <section class="hero">
+    <h1>{{title}}</h1>
+    <p>
+      <ng-content></ng-content>
+    </p>
+    <a *ngIf="button" routerLink="{{button.link}}">{{button.text}}</a>
+  </section>
+</div>

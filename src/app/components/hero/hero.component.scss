@@ -1,8 +1,21 @@
 @import '../../../scss/partials/variables';
+@import '../../../scss/partials/mixins';
 
-$hero-margin: 100px;
 $hero-title-font-size: 80px;
 $hero-title-font-weight: 400;
+
+div {
+  @include fill-parent();
+
+  align-items: center;
+  display: flex;
+  z-index: -100;
+}
+
+.center {
+  justify-content: center;
+  text-align: center;
+}
 
 .hero {
   color: $color-text;
