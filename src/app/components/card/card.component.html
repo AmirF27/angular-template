@@ -1,8 +1,10 @@
-<section>
-  <i *ngIf="icon" class="fa fa-{{getIcon()}}" aria-hidden="true"></i>
+<section class="card" [ngClass]="cssClasses">
+  <span class="icon">
+    <i *ngIf="icon" class="fa fa-{{getIcon()}}" aria-hidden="true"></i>
+  </span>
   <h4>{{title}}</h4>
   <p>
     <ng-content></ng-content>
   </p>
-  <a *ngIf="link" href="{{link}}">Learn More</a>
+  <a *ngIf="link" href="{{link}}" class="button button--default">Learn More</a>
 </section>

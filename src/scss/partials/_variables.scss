@@ -1,6 +1,7 @@
 // COLORS
 
 $white: #fff;
+$black: #000;
 $grey: #777;
 $grey-transparent: rgba(255, 255, 255, .5);
 $green: #17b794;
@@ -25,3 +26,11 @@ $navlink-padding: 10px;
 $navlink-transition: .5s;
 $navlogo-font-size: 1.25rem;
 $navlogo-font-weight: 700;
+
+// BUTTON
+
+$button-border-radius: 3px;
+$button-padding-vertical: 10px;
+$button-padding-horizontal: $button-padding-vertical * 3;
+$button-padding: $button-padding-vertical $button-padding-horizontal;
+$button-large-padding: $button-padding-vertical * 2 $button-padding-horizontal * 1.5;

@@ -4,6 +4,10 @@
     <p>
       <ng-content></ng-content>
     </p>
-    <a *ngIf="button" routerLink="{{button.link}}">{{button.text}}</a>
+    <a *ngIf="button"
+      routerLink="{{button.link}}"
+      class="button button--large button--default">
+      {{button.text}}
+    </a>
   </section>
 </div>

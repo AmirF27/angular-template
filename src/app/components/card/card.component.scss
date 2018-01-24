@@ -1,0 +1,65 @@
+@import '../../../scss/partials/variables';
+@import '../../../scss/partials/mixins';
+
+$card-primary-padding: 30px;
+$icon-container-size: 90px;
+$icon-container-background: darken($color-accent, 5%);
+$icon-size: 2.5rem;
+$icon-offset: -50px;
+$title-size: 1.125rem;
+$card-middle-shadow: 0 0 20px 5px rgba(0, 0, 0, .3);
+$card-middle-extension-height: -$icon-offset * 1.6;
+$button-margin-bottom: 30px;
+
+.card {
+  text-align: center;
+
+  .button {
+    margin-bottom: $button-margin-bottom;
+  }
+}
+
+.card--primary {
+  color: $color-text;
+  background: $color-accent;
+  flex: 33%;
+  padding: $card-primary-padding;
+
+  .icon {
+    @include rounded($icon-container-size);
+
+    background: $icon-container-background;
+    margin: 0 auto;
+    position: relative;
+    top: $icon-offset;
+
+    .fa {
+      font-size: $icon-size;
+      line-height: $icon-container-size;
+    }
+  }
+
+  h4 {
+    font-size: $title-size;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $grey-transparent;
+  }
+}
+
+.card--middle {
+  box-shadow: $card-middle-shadow;
+  position: relative;
+  top: $icon-offset;
+
+  &:after {
+    background: $color-accent;
+    content: '';
+    display: block;
+    height: $card-middle-extension-height;
+    width: 100%;
+  }
+}

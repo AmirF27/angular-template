@@ -1,0 +1,8 @@
+$card-offset: -80px;
+
+.cards {
+  display: flex;
+  position: relative;
+  top: $card-offset;
+  z-index: 200;
+}

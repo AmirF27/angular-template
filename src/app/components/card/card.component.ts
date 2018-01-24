@@ -1,16 +1,17 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss']
 })
-export class CardComponent {
+export class CardComponent implements OnInit {
   @Input('title') title: string;
   @Input('icon') icon: string;
   @Input('iconPlacement') iconPlacement: string;
   @Input('primary') primary: boolean = false;
   @Input('link') link: string;
+  @Input('middle') middle: boolean = false;
 
   iconMap = {
     announcement: 'bullhorn',
@@ -22,6 +23,19 @@ export class CardComponent {
     grid: 'th',
     check: 'check'
   };
+
+  cssClasses: {};
+
+  ngOnInit(): void {
+    this.initCssClasses();
+  }
+
+  initCssClasses(): void {
+    this.cssClasses = {
+      'card--primary': this.primary,
+      'card--middle': this.middle
+    };
+  }
 
   getIcon(): string {
     if (this.icon in this.iconMap) {

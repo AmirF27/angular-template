@@ -1,0 +1,24 @@
+@import './partials/variables';
+
+.button {
+  border: 2px solid;
+  border-radius: $button-border-radius;
+  display: inline-block;
+  line-height: 1.5;
+  padding: $button-padding;
+  transition: .3s;
+
+  &.button--large {
+    padding: $button-large-padding;
+  }
+}
+
+.button--default {
+  border-color: $white;
+  color: $color-text;
+
+  &:hover {
+    background: $white;
+    color: $black;
+  }
+}

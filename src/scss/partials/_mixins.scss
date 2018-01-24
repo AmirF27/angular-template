@@ -13,3 +13,10 @@
   right: 0;
   top: 0;
 }
+
+@mixin rounded($size, $type: block) {
+  border-radius: 50%;
+  display: $type;
+  height: $size;
+  width: $size;
+}
