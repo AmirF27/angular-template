@@ -7,24 +7,22 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: $h2-font-size;
-  text-align: center;
-  text-transform: uppercase;
-
-  &:after {
-    background: $color-accent;
-    content: '';
-    display: block;
-    height: 2px;
-    width: 50px;
-    margin: 15px auto 0;
-  }
-
-  &.light {
-    color: $white;
-  }
-}
+// h2 {
+//   font-size: $h2-font-size;
+//   text-align: center;
+//   text-transform: uppercase;
+//   margin-top: 0;
+//   margin-bottom: 20px;
+//
+//   &:after {
+//     background: $color-accent;
+//     content: '';
+//     display: block;
+//     height: 2px;
+//     width: 50px;
+//     margin: 15px auto 0;
+//   }
+// }
 
 p {
   line-height: 1.5;

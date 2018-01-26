@@ -1,0 +1,47 @@
+.section {
+  padding: $section-padding 0;
+
+  .section__heading {
+    margin-bottom: $section-heading-margin;
+  }
+
+  .section__description {
+    color: $color-text-secondary;
+    font-size: 1.25rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .section__title {
+    font-size: $section-title-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    &:after {
+      background: $color-accent;
+      content: '';
+      display: block;
+      height: 2px;
+      width: 50px;
+      margin: 15px auto 0;
+    }
+  }
+}
+
+.section--dark {
+  background: $color-bg-primary;
+
+  .section__title {
+    color: $white;
+  }
+
+  .section__description {
+    color: $grey-transparent;
+  }
+}
+
+.section--light {
+  background: $color-bg-secondary;
+}

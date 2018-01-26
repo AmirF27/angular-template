@@ -3,21 +3,37 @@
 $white: #fff;
 $black: #000;
 $grey: #777;
-$grey-transparent: rgba(255, 255, 255, .5);
+$dark-grey: #1a1a1a;
+$light-grey: #ddd;
+$grey-transparent: rgba(255, 255, 255, .7);
 $green: #17b794;
 
 $color-text: $white;
 $color-text-primary: $grey;
+$color-text-secondary: $dark-grey;
 $color-text-navbar: $grey-transparent;
+$color-bg-primary: #303841;
+$color-bg-secondary: #efefef;
 $color-accent: $green;
-
-// BASE
-
-$h2-font-size: 2.25rem;
 
 // LAYOUT
 
 $container-max-width: 1140px;
+$section-padding: 100px;
+$section-heading-margin: 80px;
+$section-title-font-size: 2.25rem;
+
+// GRID
+
+$col-min: 1;
+$col-max: 12;
+$grid-spacing: 15px;
+
+$devices: (
+  m: 480px, // mobile
+  t: 768px, // tablet
+  d: 992px // desktop
+);
 
 // NAVBAR
 

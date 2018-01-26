@@ -11,27 +11,15 @@ $card-middle-shadow: 0 0 20px 5px rgba(0, 0, 0, .3);
 $card-middle-extension-height: -$icon-offset * 1.6;
 $button-margin-bottom: 30px;
 
+$card-default-padding: 25px;
+
 .card {
   text-align: center;
-
-  .button {
-    margin-bottom: $button-margin-bottom;
-  }
-}
-
-.card--primary {
-  color: $color-text;
-  background: $color-accent;
-  flex: 33%;
-  padding: $card-primary-padding;
 
   .icon {
     @include rounded($icon-container-size);
 
-    background: $icon-container-background;
     margin: 0 auto;
-    position: relative;
-    top: $icon-offset;
 
     .fa {
       font-size: $icon-size;
@@ -42,6 +30,39 @@ $button-margin-bottom: 30px;
   h4 {
     font-size: $title-size;
     font-weight: 400;
+  }
+
+  .button {
+    margin-bottom: $button-margin-bottom;
+  }
+}
+
+.card--default {
+  padding: $card-default-padding;
+
+  .icon {
+    color: $color-accent;
+    border: 1px solid $light-grey;
+  }
+
+  p {
+    color: $color-text-primary;
+  }
+}
+
+.card--primary {
+  background: $color-accent;
+  padding: $card-primary-padding;
+
+  .icon {
+    background: $icon-container-background;
+    color: $color-text;
+    position: relative;
+    top: $icon-offset;
+  }
+
+  h4 {
+    color: $color-text;
     text-transform: uppercase;
   }
 

@@ -1,0 +1,41 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-right: -$grid-spacing;
+
+  .col {
+    box-sizing: border-box;
+
+    &:not(:last-child) {
+      margin-right: $grid-spacing;
+    }
+  }
+
+  // column classes
+  @for $i from $col-min through $col-max {
+    @each $device in map-keys($devices) {
+      .col-#{$device}-#{$i} {
+        flex: 0 0 calc(#{($i / $col-max) * 100%} - #{$grid-spacing});
+      }
+
+      &.grid--no-spacing .col-#{$device}-#{$i} {
+        flex: 0 0 #{($i / $col-max) * 100%};
+      }
+    }
+  }
+
+  &.grid--no-spacing {
+    margin-right: 0;
+
+    .col {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &.grid--center {
+    justify-content: center;
+  }
+}

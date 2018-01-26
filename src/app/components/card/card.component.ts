@@ -32,6 +32,7 @@ export class CardComponent implements OnInit {
 
   initCssClasses(): void {
     this.cssClasses = {
+      'card--default': !this.primary,
       'card--primary': this.primary,
       'card--middle': this.middle
     };
