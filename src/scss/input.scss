@@ -1,0 +1,18 @@
+.input {
+  border: $control-border-width solid;
+  border-radius: $control-border-radius;
+  display: inline-block;
+  outline: none;
+  padding: $input-padding;
+  transition: .3s;
+}
+
+.input--default {
+  background: transparent;
+  border-color: $dark-grey-transparent;
+  color: $color-text;
+
+  &:focus {
+    border-color: $grey-transparent;
+  }
+}

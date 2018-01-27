@@ -1,10 +1,10 @@
-@import './partials/variables';
-
 .button {
-  border: 2px solid;
-  border-radius: $button-border-radius;
+  border: $control-border-width solid;
+  border-radius: $control-border-radius;
+  cursor: pointer;
   display: inline-block;
   line-height: 1.5;
+  outline: none;
   padding: $button-padding;
   transition: .3s;
   text-align: center;
@@ -19,6 +19,7 @@
 }
 
 .button--default {
+  background: transparent;
   border-color: $white;
   color: $color-text;
 
@@ -26,4 +27,10 @@
     background: $white;
     color: $black;
   }
+}
+
+.button--primary {
+  background: $color-accent;
+  border-color: $color-accent;
+  color: $color-text;
 }

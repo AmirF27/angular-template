@@ -7,6 +7,7 @@ $dark-grey: #1a1a1a;
 $light-grey: #ddd;
 $medium-grey: #ccc;
 $grey-transparent: rgba(255, 255, 255, .7);
+$dark-grey-transparent: rgba(255, 255, 255, .2);
 $green: #17b794;
 
 $color-text: $white;
@@ -28,7 +29,7 @@ $section-title-font-size: 2.25rem;
 
 $col-min: 1;
 $col-max: 12;
-$grid-spacing: 15px;
+$grid-spacing: 30px;
 
 $devices: (
   m: 480px, // mobile
@@ -44,10 +45,18 @@ $navlink-transition: .5s;
 $navlogo-font-size: 1.25rem;
 $navlogo-font-weight: 700;
 
+// FORM
+
+$control-border-width: 2px;
+$control-border-radius: 3px;
+
 // BUTTON
 
-$button-border-radius: 3px;
 $button-padding-vertical: 10px;
 $button-padding-horizontal: $button-padding-vertical * 3;
 $button-padding: $button-padding-vertical $button-padding-horizontal;
 $button-large-padding: $button-padding-vertical * 2 $button-padding-horizontal * 1.5;
+
+// INPUT
+
+$input-padding: 0 20px;

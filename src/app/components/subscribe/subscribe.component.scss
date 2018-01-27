@@ -1,0 +1,17 @@
+$heading-margin-bottom: 30px;
+$control-height: 54px;
+
+.section__heading {
+  margin-bottom: $heading-margin-bottom;
+}
+
+.button,
+.input {
+  box-sizing: border-box;
+  height: $control-height;
+  width: 100%;
+}
+
+.button {
+  text-transform: uppercase;
+}
