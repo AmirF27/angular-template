@@ -1,9 +1,9 @@
 <section class="card" [ngClass]="cssClasses">
-  <span class="icon">
-    <i *ngIf="icon" class="fa fa-{{getIcon()}}" aria-hidden="true"></i>
+  <span class="card__icon-container">
+    <i *ngIf="icon" class="card__icon {{getIcon()}}" aria-hidden="true"></i>
   </span>
-  <h4>{{title}}</h4>
-  <p>
+  <h4 class="card__title">{{title}}</h4>
+  <p class="card__content">
     <ng-content></ng-content>
   </p>
   <a *ngIf="link" href="{{link}}" class="button button--default">Learn More</a>

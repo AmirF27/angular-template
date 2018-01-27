@@ -1,4 +1,7 @@
-<div>
-  <span>{{num}}</span>
-  <span>{{title}}</span>
+<div class="card card--stat">
+  <span class="card__icon-container">
+    <i *ngIf="icon" class="card__icon {{getIcon()}}" aria-hidden="true"></i>
+  </span>
+  <span class="card__content">{{currentNum | int}}</span>
+  <span class="card__title">{{title}}</span>
 </div>

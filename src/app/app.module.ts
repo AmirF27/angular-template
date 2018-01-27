@@ -28,6 +28,8 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ServicesComponent } from './components/services/services.component';
 import { ContactComponent } from './components/contact/contact.component';
 
+import { IntPipe } from './pipes/int.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,7 +55,8 @@ import { ContactComponent } from './components/contact/contact.component';
     EmployeeCardComponent,
     PortfolioComponent,
     ServicesComponent,
-    ContactComponent
+    ContactComponent,
+    IntPipe
   ],
   imports: [
     BrowserModule,
