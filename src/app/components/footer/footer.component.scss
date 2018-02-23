@@ -1,0 +1,33 @@
+@import '../../../scss/partials/variables';
+
+$title-letter-spacing: 2px;
+$link-margin-bottom: 15px;
+
+h4 {
+  letter-spacing: $title-letter-spacing;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin-bottom: $link-margin-bottom;
+
+    a {
+      color: $color-accent;
+    }
+
+    .fa {
+      margin-right: 10px;
+    }
+  }
+}
+
+p {
+  color: $color-text-primary;
+  line-height: 1.8;
+  margin: 0;
+}

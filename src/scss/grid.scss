@@ -19,6 +19,10 @@
         flex: 0 0 calc(#{($i / $col-max) * 100%} - #{$grid-spacing});
       }
 
+      .col-#{$device}-offset-#{$i} {
+        margin-left: calc(#{($i / $col-max) * 100%});
+      }
+
       &.grid--no-spacing .col-#{$device}-#{$i} {
         flex: 0 0 #{($i / $col-max) * 100%};
       }
