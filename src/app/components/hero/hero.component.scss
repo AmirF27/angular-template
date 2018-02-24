@@ -3,6 +3,8 @@
 
 $hero-title-font-size: 80px;
 $hero-title-font-weight: 400;
+$hero-desc-font-size: 1.4rem;
+$hero-desc-margin-bottom: 30px;
 
 div {
   @include fill-parent();
@@ -23,5 +25,13 @@ div {
   h1 {
     font-size: $hero-title-font-size;
     font-weight: $hero-title-font-weight;
+    line-height: 1.5;
+    margin: 0;
   }
+}
+
+p {
+  font-size: $hero-desc-font-size;
+  margin-bottom: $hero-desc-margin-bottom;
+  margin-top: 0;
 }
