@@ -102,3 +102,22 @@ $card-default-padding: 25px;
     margin-bottom: 15px;
   }
 }
+
+.card--employee {
+  .card__title {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .card__role {
+    color: lighten($grey, 25%);
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .card__content {
+    color: $grey;
+  }
+}
