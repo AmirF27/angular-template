@@ -1,10 +1,32 @@
 <section class="card" [ngClass]="cssClasses">
-  <span class="card__icon-container">
-    <i *ngIf="icon" class="card__icon {{getIcon()}}" aria-hidden="true"></i>
-  </span>
-  <h4 class="card__title">{{title}}</h4>
-  <p class="card__content">
-    <ng-content></ng-content>
-  </p>
-  <a *ngIf="link" href="{{link}}" class="button button--default">Learn More</a>
+  <div *ngIf="iconPlacement == 'left'; else card" class="grid">
+    <div class="col col-d-3">
+      <ng-container *ngTemplateOutlet="icon"></ng-container>
+    </div>
+    <div class="col col-d-9">
+      <ng-container *ngTemplateOutlet="content"></ng-container>
+    </div>
+  </div><!-- /.container -->
 </section>
+
+<ng-template #card>
+  <ng-container *ngTemplateOutlet="icon"></ng-container>
+  <ng-container *ngTemplateOutlet="content"></ng-container>
+</ng-template>
+
+<ng-template #icon>
+    <span class="card__icon-container"
+      [class.card__icon--left]="iconPlacement == 'left'">
+      <i *ngIf="icon" class="card__icon {{getIcon()}}" aria-hidden="true"></i>
+    </span>
+</ng-template>
+
+<ng-template #content>
+  <div class="card__content-container">
+    <h4 class="card__title">{{title}}</h4>
+    <p class="card__content">
+      <ng-content></ng-content>
+    </p>
+    <a *ngIf="link" href="{{link}}" class="button button--default">Learn More</a>
+  </div>
+</ng-template>

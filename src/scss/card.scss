@@ -14,7 +14,7 @@ $card-default-padding: 25px;
   text-align: center;
 
   .card__icon-container {
-    @include rounded($icon-container-size);
+    // @include rounded($icon-container-size);
 
     margin: 0 auto;
 
@@ -31,6 +31,31 @@ $card-default-padding: 25px;
 
   .button {
     margin-bottom: $button-margin-bottom;
+  }
+
+  &.card--icon-left {
+    .card__icon-container,
+    .card__content-container {
+      float: left;
+    }
+
+    .card__icon-container {
+      border: none;
+      height: auto;
+      width: auto;
+
+      .card__icon {
+        line-height: normal;
+      }
+    }
+
+    .card__content-container {
+      text-align: left;
+
+      .card__title {
+        margin-top: 0;
+      }
+    }
   }
 }
 

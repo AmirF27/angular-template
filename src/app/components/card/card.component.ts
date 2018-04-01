@@ -49,7 +49,8 @@ export class CardComponent implements OnInit {
     this.cssClasses = {
       'card--default': !this.primary,
       'card--primary': this.primary,
-      'card--middle': this.middle
+      'card--middle': this.middle,
+      'card--icon-left': this.iconPlacement === 'left'
     };
   }
 
